@@ -44,7 +44,7 @@ public class Main1 {
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()) {
             scanner.next();
-            System.out.println("To nie jest liczba");
+            System.out.println("To nie jest liczba.");
             System.out.printf("Zgadnij liczbę: ");
         }
         int number = scanner.nextInt();

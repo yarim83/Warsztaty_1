@@ -18,3 +18,5 @@ po czym zakończyć działanie programu.
 
 
 
+
+

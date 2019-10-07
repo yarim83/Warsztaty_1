@@ -1,12 +1,9 @@
-package Zadanie_4;
-
-import org.w3c.dom.xpath.XPathResult;
+package pl.coderslab.Zadanie_4;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.regex.Pattern;
 
 public class Main4 {
 
@@ -41,10 +38,6 @@ public class Main4 {
 
     }
 
-   /*
-   Sekcja metod
-    */
-
     public static int[] readDice() {
         String readedDice = null;
         int x = 0, y = 0, z = 0;
@@ -67,9 +60,9 @@ public class Main4 {
             //System.out.println(Arrays.toString(partsDice));
             try {
                 //result[0] = Integer.parseInt(partsDice[0]);
-                 if (readedDice.contains("+")) {
+                if (readedDice.contains("+")) {
                     String[] partsRight = partsDice[1].split("\\+", 2);
-                    if (!partsDice[0].isEmpty()){
+                    if (!partsDice[0].isEmpty()) {
                         result[0] = Integer.parseInt(partsDice[0]);
                     } else {
                         result[0] = 1;
@@ -79,11 +72,11 @@ public class Main4 {
                     result[3] = Integer.parseInt(partsRight[1]);
                 } else if (readedDice.contains("-")) {
                     String[] partsRight = partsDice[1].split("-", 2);
-                     if (!partsDice[0].isEmpty()){
-                         result[0] = Integer.parseInt(partsDice[0]);
-                     } else {
-                         result[0] = 1;
-                     }
+                    if (!partsDice[0].isEmpty()) {
+                        result[0] = Integer.parseInt(partsDice[0]);
+                    } else {
+                        result[0] = 1;
+                    }
                     result[1] = Integer.parseInt(partsRight[0]);
                     result[2] = -1;
                     result[3] = Integer.parseInt(partsRight[1]);

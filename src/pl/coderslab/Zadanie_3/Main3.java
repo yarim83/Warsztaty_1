@@ -1,6 +1,5 @@
-package Zadanie_3;
+package pl.coderslab.Zadanie_3;
 
-import javax.security.auth.login.AccountLockedException;
 import java.util.Scanner;
 
 public class Main3 {
@@ -46,7 +45,6 @@ public class Main3 {
         }
 
     }
-    //Sekcja na klasy
 
     public static int readAnwser() {
         Scanner scanner = new Scanner(System.in);

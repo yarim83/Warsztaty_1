@@ -92,29 +92,11 @@ mody kator,
 Typy kostek występujące w grach:
 D3, D4, D6, D8, D10, D12, D20, D100.
 
-#Zadanie 5
+# Zadanie 5
 ### Wyszukiwarka najpopulatniejszych słów
 
-Zaimportuj do projektu bibliotekę jsoup, możesz ją pobrać z adresu: https://jsoup.org/download
-Wyszukaj w popularnych serwisach internetowych nagłówków artykułów, a następnie zapisz
-pojedyncze słowa w nich występujące do pliku o nazwie popular_words.txt . Przykład pobrania
-tytułów z tagu html span z atrybutem class o wartości title :
-Connection connect = Jsoup.connect("http://www.onet.pl/");
-
-try {
-Document document = connect.get();
-Elements links = document.select("span.title");
-for (Element elem : links) {
-System.out.println(elem.text());
-}
-} catch (IOException e) {
-e.printStackTrace();
-}
-
-
-Wywołaj pobieranie dla wybranych serwisów internetowych.
-Pomiń wszystkie elementy krótsze niż 3-znakowe.
-Utwórz tablicę elementów wykluczonych np. oraz, ponieważ
-Wczytaj utworzony plik popular_words.txt i na jego podstawie utwórz plik
-filtered_popular_words.txt , który zawierać będzie wszystkie znalezione słowa,
-pomijając słowa wykluczone.
+Wyszukiwarka oparta jest o bibliotekę jsoup, którą można pobrać z adresu: https://jsoup.org/download.
+Głównym założeniem wyszukiwarki jest przeglądnięcie wskazanego w programie serwisu w poszukiwaniu słów z tagu HTML 
+<span> z atrybutem class "title". Zapis zostaje dokonany do pliku popular_words.txt. Następnie na podstawie słów filtrowanych 
+zostaje utworzony plik filtered_popular_words.txt który zawierać będzie wszystkie znalezione słowa z wyjątkiem słów filtrowanych.
+Wszystkie elementy krótsze niż 3-znaki zostają pominięte. 

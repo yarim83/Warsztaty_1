@@ -1,4 +1,4 @@
-package pl.coderslab.Zadanie_2;
+package pl.coderslab.Gra_zgadywanie_liczba_inna;
 
 import java.util.Arrays;
 import java.util.Collections;

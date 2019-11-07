@@ -1,4 +1,4 @@
-package pl.coderslab.Zadanie_4;
+package pl.coderslab.Lotto;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

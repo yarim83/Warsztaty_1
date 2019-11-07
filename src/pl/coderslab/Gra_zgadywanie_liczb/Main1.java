@@ -1,4 +1,4 @@
-package pl.coderslab.Zadanie_1;
+package pl.coderslab.Gra_zgadywanie_liczb;
 
 import java.util.Random;
 import java.util.Scanner;

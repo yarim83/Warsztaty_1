@@ -1,4 +1,4 @@
-package pl.coderslab.Zadanie_3;
+package pl.coderslab.Kostka_do_gry;
 
 import java.util.Scanner;
 

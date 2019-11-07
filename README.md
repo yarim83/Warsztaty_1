@@ -99,4 +99,4 @@ Wyszukiwarka oparta jest o bibliotekę jsoup, którą można pobrać z adresu: h
 Głównym założeniem wyszukiwarki jest przeglądnięcie wskazanego w programie serwisu w poszukiwaniu słów z tagu HTML 
 <span> z atrybutem class "title". Zapis zostaje dokonany do pliku popular_words.txt. Następnie na podstawie słów filtrowanych 
 zostaje utworzony plik filtered_popular_words.txt który zawierać będzie wszystkie znalezione słowa z wyjątkiem słów filtrowanych.
-Wszystkie elementy krótsze niż 3-znaki zostają pominięte. 
+Wszystkie elementy krótsze niż 3-znaki zostają pominięte.
